@@ -1,0 +1,122 @@
+<!-- CODE FOR MARKS RECORDER -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Marks Recorder for students
+        </title>
+        <link rel = "stylesheet" type ="text/css" href = "style.css">
+    </head>
+    <body>
+        <div class="box">
+            <div class="left-box">
+        <form id = "form" class="form">
+            <h1>Enter Student Data</h1>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+
+            <label for="gender">Gender</label>
+            <select id="gender" class="gender">
+                <option value="------" id="gender-none">Select Your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+            <label for="class">Class</label>
+            <select id="select-class" class="select-class">
+                <option value = " -------" id="class-none">Select your class</option>
+                <option value="1">Std 1</option>
+                <option value="2">Std 2</option>
+                <option value="3">Std 3</option>
+                <option value="4">Std 4</option>
+                <option value="5">Std 5</option>
+                <option value="6">Std 6</option>
+                <option value="7">Std 7</option>
+                <option value="8">Std 8</option>
+                <option value="9">Std 9</option>
+                <option value="10">Std 10</option>
+                <option value="11">Std 11</option>
+                <option value="12">Std 12</option>
+            </select>
+
+            <label for="section">Section</label>
+            <select class="section" id="section">
+                <option value="----" id="section-none">Select Your Section</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+
+            <label for="exam">Exam Type</label>
+            <select class="exam-type" id="exam-type">
+                <option value="----" id="exam-none">Select Your Exam Type</option>
+                <option value="Annual Exam">Annual Exam</option>
+                <option value="semester">Semester</option>
+            </select>
+
+            <label for="subject" ><h3>Enter Your Subject Marks</h3></label>
+
+            <label for="english">English</label>
+            <input type="text" name="english" id="eng">
+
+            <label for="math">Math</label>
+            <input type="text" name="math" id="math">
+
+            <label for="science">Science</label>
+            <input type="text" name="science" id="sc">
+
+            <label for="sst">SST</label>
+            <input type="text" name="sst" id="sst">
+
+            <label for="hindi">Hindi</label>
+            <input type="text" name="hindi" id="hn">
+
+            <button type="submit" id="submit-btn" onclick="submitData()">Submit</button>
+        </form>
+    </div>
+
+    <div class="right-box" id="res"><h3 id = "display">Display Result</h3>
+        <table id="display-table">
+            <thead>
+                <tr>
+                    <td>Registration Id</td>
+                    <td>name</td>
+                    <td>Date of Birth</td>
+                    <td>Class</td>
+                    <td>Section</td>
+                    <td>Exam</td>
+                    <td>English</td>
+                    <td>Math</td>
+                    <td>Science</td>
+                    <td>SST</td>
+                    <td>Hindi</td>
+                    <td>Total Marks</td>
+                    <td>Percentage Marks</td>
+                    <td>Grade</td>
+                    <td>Status</td>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+    </div>
+
+    <hr/>
+
+    <button type="button" id="avg" onclick="avgMarks()">Average</button>
+    <button type="button" id="asc" onclick="ascendingMarks()">Ascending </button>
+    <button type="button" id="desc" onclick="descendingMarks()">Descending</button>
+    <button type="button" id="student-details" onclick="stdDetails()">Student-Details</button>
+    <input type="text" placeholder="Enter Registration Number" id= "reg-no"> Or 
+    <input type="text" placeholder="enter the name" id="std-name">
+    <button type="button">Search</button>
+    <button type="button" onclick="reset()">Reset</button>
+    </body>
+    <script type="text/javascript" src="index.js">
+
+    </script>
+</html>
