@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Keyboard</title>
+        <link rel="stylesheet" href="keyboard.css" type="text/css">
+    </head>
+    <body>
+        <div class="output-box">
+            <div id="name">
+        </div>
+
+
+        <div class="keyboard" id="keyboard">
+            <div class="number-key">
+                
+                                <!-- id{1... 10} represent the id of respective symbol -->
+
+                <button class="key" value="!" onclick="keyClicked(1)" id="s1"><span class="on">!</span><span class="off" >1</span></button>
+                <button class="key" value="@" onclick="keyClicked(2)" id="s2"><span class="on">@</span><span class="off">2</span></button>
+                <button class="key" value="#" onclick="keyClicked(3)" id="s3"><span class="on" >#</span><span class="off">3</span></button>
+                <button class="key" value="$" onclick="keyClicked(4)" id="s4"><span class="on" >$</span><span class="off">4</span></button>
+                <button class="key" value="%" onclick="keyClicked(5)" id="s5"><span class="on" >%</span><span class="off">5</span></button>
+                <button class="key" value="^" onclick="keyClicked(6)" id="s6"><span class="on" >^</span><span class="off">6</span></button>
+                <button class="key" value="&" onclick="keyClicked(7)" id="s7"><span class="on" >&</span><span class="off">7</span></button>
+                <button class="key" value="*" onclick="keyClicked(8)" id="s8"><span class="on" >*</span><span class="off">8</span></button>
+                <button class="key" value="(" onclick="keyClicked(9)" id="s9"><span class="on" >(</span><span class="off">9</span></button>
+                <button class="key" value=")" onclick="keyClicked(0)" id="s10"><span class="on" >)</span><span class="off">0</span></button>
+                    <button class="key" id="del" onclick="delElem()">DEL</div>
+                
+            </div>
+            <div class="letter-key-first-line">
+                
+                <button class="letter" onclick="keyClicked('q')">q</button>
+                <button class="letter" onclick="keyClicked('w')">w</button>
+                <button class="letter" onclick="keyClicked('e')">e</button>
+                <button class="letter" onclick="keyClicked('r')">r</button>
+                <button class="letter" onclick="keyClicked('t')">t</button>
+                <button class="letter" onclick="keyClicked('y')">y</button>
+                <button class="letter" onclick="keyClicked('u')">u</button>
+                <button class="letter" onclick="keyClicked('i')">i</button>
+                <button class="letter" onclick="keyClicked('o')">o</button>
+                <button class="letter" onclick="keyClicked('p')">p</button>
+            
+            </div> 
+            
+            <div class="letter-key-second-line">
+                
+                <button class="letter" onclick="keyClicked('a')">a</button>
+                <button class="letter" onclick="keyClicked('s')">s</button>
+                <button class="letter" onclick="keyClicked('d')">d</button>
+                <button class="letter" onclick="keyClicked('f')">f</button>
+                <button class="letter" onclick="keyClicked('g')">g</button>
+                <button class="letter" onclick="keyClicked('h')">h</button>
+                <button class="letter" onclick="keyClicked('j')">j</button>
+                <button class="letter" onclick="keyClicked('k')">k</button>
+                <button class="letter" onclick="keyClicked('l')">l</button>
+            
+            </div> 
+        
+            <div class="letter-key-third-line">
+                
+                <button class="letter" onclick="keyClicked('z')">z</button>
+                <button class="letter" onclick="keyClicked('x')">x</button>
+                <button class="letter" onclick="keyClicked('c')">c</button>
+                <button class="letter" onclick="keyClicked('v')">v</button>
+                <button class="letter" onclick="keyClicked('b')">b</button>
+                <button class="letter" onclick="keyClicked('n')">n</button>
+                <button class="letter" onclick="keyClicked('m')">m</button>
+                <button class="letter" id="com" onclick="keyClicked('.com')">.com</button>        
+            </div>
+
+            <button class="spacebar" id="spacebar" onclick="spaceBar()" >
+                <!-- <div></div> -->
+            </button>
+        </div>
+        <!-- <button id="test" value="5" onclick="shiftButton()">5</button> -->
+
+        <div class="button-class-black">
+            <button class="special-btn" class="on" id="caps-color" onclick="capsButton()">CAPS</button>
+            <button class="special-btn" class="on" id="shift-color" onclick="shiftButton()">SHIFT</button>
+            <button class="special-btn" class="on" id="pass-color" onclick="showPassword()">PASSWD</button>
+            <button class="special-btn" class="on" id="clean-color" onclick="cleanPass()">CLEAN</button>
+            <button class="special-btn" class="on" id="rev-color" onclick="reverseStr()">REV</button>
+                
+        </div>
+
+
+    </body>
+    <script type="text/javascript" src="keyboard.js">
+    </script>
+</html>
